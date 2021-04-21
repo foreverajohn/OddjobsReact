@@ -1,4 +1,4 @@
-import { Card, CardText, CardBody, CardTitle } from 'reactstrap'
+import { Card, CardText, CardBody, CardTitle, CardFooter } from 'reactstrap'
 
 function RenderCard({post}) {
     return (
@@ -6,12 +6,17 @@ function RenderCard({post}) {
             <CardBody>
                 <CardTitle>{post.title}</CardTitle>
                 <CardText>{post.body}</CardText>
+                <CardFooter>
+                    {post.urgency} // 
+                    {post.pay} // 
+                    {post.age}
+                </CardFooter>
             </CardBody>
         </Card>
     )
 }
 
-function Carousel(props) {
+function PostCarousel(props) {
     
     const posts = props.items.map(item => {
         return (
@@ -30,4 +35,4 @@ function Carousel(props) {
     );
 }
 
-export default Carousel;
+export default PostCarousel;

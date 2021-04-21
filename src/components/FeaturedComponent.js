@@ -3,25 +3,25 @@ import { Card, CardText, CardBody, CardTitle } from 'reactstrap'
 
 function RenderCard({user}) {
     return (
-        <div className="card mt-2">
-            <div className="card-header">
+        <Card className="mt-2">
+            <CardTitle>
                 <a href="profile.html"><h4>{user.name}</h4></a>
-            </div>
-            <div className="card-body">
+            </CardTitle>
+            <CardBody>
                 <div className="image"> 
-                <a href="#"> <img src={user.pic} class="rounded-circle" height="64" width="64" /> </a>
+                    <img src={user.pic} alt={user.name} class="rounded-circle" height="64" width="64" />
                 </div>
-                <div className="card-text"> 
+                <CardText> 
                     <p>{user.bio}</p>
                     <div class="ratings ml-2"> 
                         {user.score} <i className="fa fa-star"></i> 
                     </div>
-                </div>
-            </div>
+                </CardText>
+            </CardBody>
             <div className="card-footer"> 
                 <button className="btn btn-primary btn-block">Contact</button>                               
             </div>
-        </div>
+        </Card>
     )
 }
 
