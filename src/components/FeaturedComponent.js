@@ -1,11 +1,12 @@
 import React from 'react'
 import { Card, CardText, CardBody, CardTitle } from 'reactstrap'
+import { Link } from 'react-router-dom';
 
 function RenderCard({user}) {
     return (
         <Card className="mt-2">
             <CardTitle>
-                <a href="profile.html"><h4>{user.name}</h4></a>
+                <Link to={`/user/${user.name}`}><h4>{user.name}</h4></Link>
             </CardTitle>
             <CardBody>
                 <div className="image"> 
