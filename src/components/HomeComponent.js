@@ -1,13 +1,13 @@
 import React from 'react';
 import Hero from './HeroPieceComponent';
-import PostCarousel from './CarouselComponent';
+import PostCarousel from './PostCarouselComponent';
 import Featured from './FeaturedComponent';
 
 function Home(props) {
     return (
         <React.Fragment>
             <Hero />
-            <div class="col text-center pt-3">
+            <div className="container">
                 <h2>What's in Need</h2>
                 <PostCarousel items={props.need} />
                 <hr />

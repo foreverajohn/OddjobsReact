@@ -21,17 +21,15 @@ function PostCarousel(props) {
     
     const posts = props.items.map(item => {
         return (
-            <div key={item.id} className="col-md-5 m-1">
+            <div key={item.id} className="col-md-6 my-1">
                 <RenderCard post={item} />
             </div>
         );
     });
     
     return (
-        <div className="container">
-            <div className="row">
-                {posts}
-            </div>
+        <div className="row">
+            {posts}
         </div>
     );
 }

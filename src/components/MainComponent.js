@@ -21,7 +21,11 @@ class Main extends Component {
 
       const HomePage = () => {
           return (
-            <Home need={this.state.posts.filter(post => post.type === 'need')} offer={this.state.posts.filter(post => post.type === 'offer')} users={this.state.users} />
+            <Home 
+              need={this.state.posts.filter(post => post.type === 'need')} 
+              offer={this.state.posts.filter(post => post.type === 'offer')} 
+              users={this.state.users} 
+            />
           )
       }
 

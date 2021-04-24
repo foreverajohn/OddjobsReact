@@ -35,8 +35,10 @@ header .container #searchDiv {
       color: #F1FFE7;
       text-decoration: none; }
 
-h2 {
-  color: #1A1B41; }
+h2, h4 {
+  color: #1A1B41; 
+  text-align: center;
+}
 
 .modal-header {
   background-color: #ffbf20; }
@@ -80,8 +82,13 @@ span {
   padding: 20px 0;
   color: #F1FFE7; }
 
+.card-title {
+  text-align: center;
+}
+
 .card-title a, .card-subtitle a {
   text-decoration: none;
+  text-align: center;
   font-family: "Permanent Marker", cursive;
   color: #1A1B41; }
 
