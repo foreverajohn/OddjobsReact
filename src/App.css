@@ -7,16 +7,6 @@ h1, h2, h3, h4 {
 nav div a {
   font-family: "Permanent Marker"; }
 
-header {
-  background-position: center top;
-  background-size: cover; }
-
-header .container #searchDiv {
-  background-color: rgba(206, 206, 206, 0.5);
-  border-radius: 10px;
-  padding: 40px 0px;
-  margin: 0px 50px; }
-
 @media screen and (min-width: 575px) {
   #searchSelect {
     font-size: 25px; }
@@ -40,12 +30,20 @@ h2, h4 {
   text-align: center;
 }
 
+#searchDiv {
+  background-color: rgba(206, 206, 206, 0.5);
+  border-radius: 10px;
+  padding: 40px 0px;
+  margin: 0px 50px;
+}
+
 .modal-header {
   background-color: #ffbf20; }
 
 #searchSelect {
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+ }
 
 span {
   display: inline-block;
@@ -59,7 +57,6 @@ span {
 
 #smrect, #smrectMd {
   position: relative;
-  right: 115px;
   z-index: 50; }
 
 #need, #needMd {
@@ -86,65 +83,40 @@ span {
   text-align: center;
 }
 
+.gig-card {
+  border-radius: 5px;
+  border: 1px solid  lightgray;
+  height: 270px;
+  background: #FFFFA5;
+}
+
+.card-title {
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  position: relative;
+  top: 25px;
+  }
+.card-body {
+  text-align: justify;
+  padding: 10px 15px;
+}
+.card-footer {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  bottom: 0;
+}
+
 .card-title a, .card-subtitle a {
   text-decoration: none;
-  text-align: center;
   font-family: "Permanent Marker", cursive;
   color: #1A1B41; }
 
 .card-header .text-muted a {
   text-decoration: none;
   color: #1A1B41; }
-
-#needAccordion, #offerAccordion {
-  background-size: cover;
-  border-radius: 3px;
-  border: 1px solid  lightgray; }
-
-.carousel-cell {
-  width: 250px;
-  padding-right: 10px; }
-
-.carousel-cell .gig-card {
-  border-radius: 5px;
-  border: 1px solid  lightgray;
-  height: 270px;
-  background: #FFFFA5; 
-}
-
-.carousel-cell .gig-card .card-title {
-  text-align: center;
-  height: auto;
-  padding: 10px;
-  position: relative;
-  top: 25px; 
-}
-
-.carousel-cell .gig-card .card-body {
-  text-align: justify;
-  padding: 10px 15px; 
-}
-
-.carousel-cell .gig-card .card-footer {
-  position: absolute;
-  width: 240px;
-  bottom: 0; }
-
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  line-height: 200px;
-  font-size: 80px;
-  color: white; }
-
-.flickity-page-dots {
-  bottom: -22px; }
-
-.flickity-page-dots .dot {
-  height: 4px;
-  width: 40px;
-  margin: 0;
-  border-radius: 0; }
 
 .post-body {
   float: right; }

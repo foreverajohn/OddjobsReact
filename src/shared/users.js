@@ -2,7 +2,7 @@ export const USERS = [
     {
         id : 0,
         name : "Mario Lamberti",
-        pic : "assets/images/mario.jpg",
+        pic : "../assets/images/mario.jpg",
         bio : "Plumber and very capable handyman." ,
         score : 5,
         address : "320 Dire Docks, Mushroom Kingdom",
@@ -21,7 +21,7 @@ export const USERS = [
     {
         id : 1,
         name : "Luigi Anderson",
-        pic : "assets/images/luigi.png",
+        pic : "../assets/images/luigi.png",
         bio : "Car mechanic and fixer-all!" ,
         score : 4,
         address : "",
@@ -33,7 +33,7 @@ export const USERS = [
     {
         id : 2,
         name : "Bowser Rodriguez",
-        pic : "assets/images/bowser.jpg",
+        pic : "../assets/images/bowser.jpg",
         bio : "Painter and general masonry." ,
         score : 4,
         address : "",
@@ -45,7 +45,7 @@ export const USERS = [
     {
         id : 3,
         name : "Wario Smith",
-        pic : "assets/images/wario.jfif",
+        pic : "../assets/images/wario.jfif",
         bio : "Barber and hairstylist" ,
         score : 5,
         address : "",
@@ -57,7 +57,7 @@ export const USERS = [
     {
         id : 4,
         name : "Peach Simpson",
-        pic : "assets/images/peach.jpg",
+        pic : "../assets/images/peach.jpg",
         bio : "Landscaping and general gardening" ,
         score : 3,
         address : "",
@@ -69,7 +69,7 @@ export const USERS = [
     {
         id : 5,
         name : "Yoshi Robertson",
-        pic : "assets/images/yoshi.jpg",
+        pic : "../assets/images/yoshi.jpg",
         bio : "Dogsitter and tamer" ,
         score : 5,
         address : "",

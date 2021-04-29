@@ -28,17 +28,15 @@ function Featured(props) {
 
     const profiles = props.items.map(item => {
         return (
-            <div key={item.id} className="col-md-6 my-1">
+            <div key={item.id} className="col-sm-6 col-md-4 my-1">
                 <RenderCard user={item} />
             </div>
         );
     });
 
     return (
-        <div className="container">
-            <div className="row">
-                {profiles}
-            </div>
+        <div className="row">
+            {profiles}
         </div>
     )
 }
